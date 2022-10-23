@@ -1,0 +1,74 @@
+@media (max-width: 767px) {
+  body {
+    /* background-color: green; */
+    font-size: 1rem;
+  }
+  .avatar-img {
+    display: none;
+  }
+  .nav {
+    height: 100%;
+    text-align: left;
+  }
+  .nav-item {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  .cert-item-border--bottom {
+    border-bottom: 2px solid #d6c08d;
+  }
+
+  .footer-text {
+    display: none;
+  }
+  .footer-nav-item i {
+    font-size: 40px;
+  }
+
+  /* Do class này sử dunjg psedo nên tham khảo trang này để canh chỉnh 
+ https://stackoverflow.com/questions/14523927/vertically-centering-content-of-before-after-pseudo-elements */
+  .ic-megaphone::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-strategy::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-hotairballoon::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-basket::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+}

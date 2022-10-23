@@ -1,0 +1,91 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    /* background-color: rgb(15, 15, 225); */
+    font-size: 0.8rem;
+  }
+
+  .md-hidden {
+    display: none;
+  }
+  .nav {
+    height: 50px;
+    text-align: center;
+  }
+  .nav-item {
+    font-size: 12px;
+    text-transform: uppercase;
+    align-self: stretch;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  .project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    height: 260px;
+  }
+  .md-cert-item-border--bottom {
+    border-bottom: 2px solid #d6c08d;
+  }
+  .md-cert-item-border--left {
+    border-left: 2px solid #d6c08d;
+  }
+
+  .md-border--left {
+    border-left: 2px solid #e0dfdf;
+  }
+  .md-border--right {
+    border-right: 2px solid #e0dfdf;
+  }
+  .footer-nav-item {
+    font-size: 0.8rem;
+  }
+
+  /* Do class này sử dunjg psedo nên tham khảo trang này để canh chỉnh 
+ https://stackoverflow.com/questions/14523927/vertically-centering-content-of-before-after-pseudo-elements */
+  .ic-megaphone::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-strategy::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-hotairballoon::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+  .ic-basket::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding-top: 13px;
+  }
+}

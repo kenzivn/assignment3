@@ -1,0 +1,88 @@
+@media (min-width: 992px) {
+  body {
+    /* background-color: rgb(196, 30, 154); */
+    font-size: 1rem;
+  }
+  .nav {
+    height: 50px;
+    text-align: center;
+  }
+
+  .lg-cert-item-border--bottom {
+    border-bottom: 2px solid #d6c08d;
+  }
+  .lg-cert-item-border--left {
+    border-left: 2px solid #d6c08d;
+  }
+  .lg-border--left {
+    border-left: 2px solid #e0dfdf;
+  }
+  .lg-border--right {
+    border-right: 2px solid #e0dfdf;
+  }
+  .nav-item {
+    font-size: 13px;
+    text-transform: uppercase;
+    align-self: stretch;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  .project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    grid-template-rows: auto auto auto;
+    height: 300px;
+  }
+  .footer-nav-item {
+    font-size: 1rem;
+  }
+
+  /* Do class này sử dunjg psedo nên tham khảo trang này để canh chỉnh 
+ https://stackoverflow.com/questions/14523927/vertically-centering-content-of-before-after-pseudo-elements */
+  .ic-megaphone::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    padding-top: 13px;
+  }
+  .ic-strategy::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    padding-top: 13px;
+  }
+  .ic-hotairballoon::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    padding-top: 13px;
+  }
+  .ic-basket::before {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(30, 145, 174);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    padding-top: 13px;
+  }
+}
