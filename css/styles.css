@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fontello, sans-serif;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+i {
+  color: rgb(30, 145, 174);
+}
+
+.bg-grey {
+  background: #e7e5e5;
+}
+.bg-light-grey {
+  background: #f6f6f6;
+}
+
+.hidden {
+  display: none;
+}
+.banner {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-text {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-img {
+  height: 800px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.avatar-img {
+  width: 150px;
+  border: 8px solid #fff;
+  border-radius: 100px;
+  position: relative;
+  top: -60px;
+}
+
+.timeline ol {
+  list-style-type: none;
+}
+
+.timeline ol li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-left: 20px;
+}
+
+/* dùng để vẽ đường timeline - nếu không cần thì có thể bỏ */
+.timeline ol li:before {
+  /* tạo phần từ "" trước li để vẽ đường thẳng dọc xuống từ trên xuống bằng cách dùng background giả lập đường thẳng top=bottom=0 ; width: độ rộng nét vẽ; left dùng để canh với nút tròn nguồn tham khảo https://css-tricks.com/snippets/css/unordered-list-as-a-timeline/*/
+  content: "";
+  background-color: rgb(30, 145, 174);
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 7px;
+  width: 1px;
+}
+
+/* dùng để vẻ nút bullet giả lập ul */
+.timeline ol li:after {
+  /*tạo phần tử hình tròn đen và canh chỉnh theo dường dọc của li:before*/
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%231e91ae' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+}
+/* hết phần tham khảo https://css-tricks.com/snippets/css/unordered-list-as-a-timeline/*/
+.timeline ol li {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.timeline-info-item {
+  font-weight: bold;
+}
+.timeline-info-desc {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.timeline-info-period {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.timeline-now {
+  display: inline-block;
+  font-weight: bold;
+  padding: 3px;
+  background-color: rgb(0, 255, 255);
+  border-radius: 15%;
+}
+
+.info-card {
+  margin: 10px;
+  border: 2px solid rgb(239, 238, 238);
+}
+.info-header {
+  margin: 30px 20px;
+  display: flex;
+}
+.info-title {
+  position: relative;
+  width: 76%;
+  font-size: 24px;
+}
+.info-icon {
+  font-size: 34px;
+  width: 25%;
+}
+/* Tạo các thanh màu dày mỏng tùy theo mức độ . bo tròn góc bằng border-radius */
+.level-bar {
+  display: inline-block;
+  margin-right: 5px;
+  width: 40px;
+  border-radius: 5px;
+}
+.level-bar-0 {
+  background-color: rgb(221, 223, 223);
+  border: 1px solid rgb(221, 223, 223);
+}
+.level-bar-1 {
+  background-color: rgb(0, 255, 255);
+  border: 1px solid rgb(0, 255, 255);
+}
+.level-bar-2 {
+  background-color: rgb(0, 217, 255);
+  border: 1.5px solid rgb(0, 217, 255);
+}
+.level-bar-3 {
+  background-color: rgb(0, 191, 255);
+  border: 2.5px solid rgb(0, 191, 255);
+}
+/* Hoạt động và học vấn sử dụng chung class này do không dùng vạch timeline pseudo  chỉ dùng bullet*/
+.activities ol {
+  list-style-type: none;
+}
+
+.activities ol li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-left: 20px;
+}
+
+/* dùng để vẻ nút bullet giả lập ul */
+.activities ol li:after {
+  /*tạo phần tử hình tròn đen và canh chỉnh theo dường dọc của li:before*/
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%231e91ae' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+}
+/* hết phần tham khảo https://css-tricks.com/snippets/css/unordered-list-as-a-timeline/*/
+.activities ol li {
+  line-height: 1.5;
+  text-align: justify;
+}
+/* Sơ thích */
+
+.hobbies {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+/* PROJECT */
+
+.project-item-img {
+  width: 100%;
+  align-self: start;
+  display: block;
+}
+
+.project-name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+.project-year {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding: 0 5px;
+  margin: 5px 5px;
+  background-color: rgb(0, 191, 255);
+  border-radius: 15px;
+}
+.project-place {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  margin: 5px 5px;
+}
+
+.project-role {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  margin: 5px 5px;
+}
+
+.footer {
+  height: 90px;
+  align-items: center;
+  justify-items: center;
+}
+.footer-nav-item {
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
